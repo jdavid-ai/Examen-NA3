@@ -2,38 +2,81 @@ body{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 150%;
 }
+
 h1{
-    text-align: center;
-    background-color: burlywood;
-    font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  background-color: burlywood;
+  font-family: 'Courier New', Courier, monospace;
 }
+
 p{
-    font-size: 32px;
-    line-height: 1.5;
+  font-size: 32px;
+  line-height: 1.5;
 }
+
 header {
   background-color: #393e39;
 }
 
-
 nav {
   background-color: #aa7474;
+  display: inline-block;
+  width: 80%;
 }
 
-
+/*
 li {
   display: inline-block; 
   width: 120px;
 }
+*/
 
+nav img {
+  width: 10%;
+  position: relative;
+  top: 20px;
+}
 
 main {
   background-color: #a41919;
   font-size: 28px;
 }
 
-
 footer {
   background-color: #978f8f;
   color: red;
+}
+
+/* SKIP LINK */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+  background: white;
+  color: black;
+  padding: 5px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.grid img {
+  width: 100%;
+}
+
+/* FLEX */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
